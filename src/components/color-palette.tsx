@@ -49,7 +49,7 @@ export default function ColorPalette() {
                   return (
                     <div style={{ background: colorV2 }} className="w-24 text-[9px] lowercase">
                       <div>
-                        <span className="bg-white/40">{color}</span>
+                        <span className="bg-white/40">{colorV2}</span>
                       </div>
                       <div>
                         <span className="bg-white/40">

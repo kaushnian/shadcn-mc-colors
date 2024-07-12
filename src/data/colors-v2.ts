@@ -94,7 +94,6 @@ export const colorsV2: ColorOptions = {
     dark: '#296671',
     light: '#D3E9ED',
     main: '#337F8D',
-    shade700percent4: '#F4F7FA',
   },
   yellow: {
     50: '#FFFCF5',
