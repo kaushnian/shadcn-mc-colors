@@ -20,24 +20,19 @@ export default function ColorPalette() {
             <div key={option} className="flex h-20 mb-0.5 gap-0.5">
               <div style={{ background: color }} className="flex-1 text-[9px] lowercase">
                 <div>
-                  <span className="bg-white/40 px-1">{color}</span>
+                  <span className="bg-white/40 shadow px-1">{color}</span>
                 </div>
-                <div>
-                  <span className="bg-white/40 px-1">
-                    {isHue(option) ? (
-                      <>
-                        <div>
-                          <span className="bg-white/40 px-1">
-                            {Object.entries(options).find(([_, value]) => value === color)?.[0]}
-                          </span>
-                        </div>
-                        <div className="bg-white/40 uppercase border-black border-y">{option}</div>
-                      </>
-                    ) : (
-                      option
-                    )}
-                  </span>
-                </div>
+
+                {isHue(option) ? (
+                  <>
+                    <span className="bg-white/40 shadow px-1">
+                      {Object.entries(options).find(([_, value]) => value === color)?.[0]}
+                    </span>
+                    <div className="bg-white/40 shadow uppercase">{option}</div>
+                  </>
+                ) : (
+                  <span className="bg-white/40 shadow px-1">{option}</span>
+                )}
               </div>
 
               {/* V2 Colors */}
@@ -48,30 +43,19 @@ export default function ColorPalette() {
                 return (
                   <div style={{ background: colorV2 }} className="flex-1 text-[9px] lowercase">
                     <div>
-                      <span className="bg-white/40 px-1">{colorV2}</span>
+                      <span className="bg-white/40 shadow px-1">{colorV2}</span>
                     </div>
-                    <div>
-                      <span className="bg-white/40 px-1">
-                        {isHue(option) ? (
-                          <>
-                            <div>
-                              <span className="bg-white/40 px-1">
-                                {
-                                  Object.entries(optionsV2).find(
-                                    ([_, value]) => value === colorV2
-                                  )?.[0]
-                                }
-                              </span>
-                            </div>
-                            <div className="bg-white/40 uppercase border-black border-y">
-                              {option}
-                            </div>
-                          </>
-                        ) : (
-                          option
-                        )}
-                      </span>
-                    </div>
+
+                    {isHue(option) ? (
+                      <>
+                        <span className="bg-white/40 shadow px-1">
+                          {Object.entries(optionsV2).find(([_, value]) => value === colorV2)?.[0]}
+                        </span>
+                        <div className="bg-white/40 shadow uppercase">{option}</div>
+                      </>
+                    ) : (
+                      <span className="bg-white/40 shadow px-1">{option}</span>
+                    )}
                   </div>
                 );
               })()}
