@@ -13,21 +13,21 @@ export default function ColorPalette() {
             <div className="w-20">Flynn</div>
           </div>
           <div style={{ background: name }} className="text-white text-xs capitalize">
-            {name}
+            <span className="bg-black/40 px-1">{name}</span>
           </div>
 
           {Object.entries(options).map(([option, color]) => (
             <div key={option} className="flex h-20 mb-0.5 gap-0.5">
               <div style={{ background: color }} className="flex-1 text-[9px] lowercase">
                 <div>
-                  <span className="bg-white/40">{color}</span>
+                  <span className="bg-white/40 px-1">{color}</span>
                 </div>
                 <div>
-                  <span className="bg-white/40">
+                  <span className="bg-white/40 px-1">
                     {isHue(option) ? (
                       <>
                         <div>
-                          <span className="bg-white/40">
+                          <span className="bg-white/40 px-1">
                             {Object.entries(options).find(([_, value]) => value === color)?.[0]}
                           </span>
                         </div>
@@ -48,14 +48,14 @@ export default function ColorPalette() {
                 return (
                   <div style={{ background: colorV2 }} className="flex-1 text-[9px] lowercase">
                     <div>
-                      <span className="bg-white/40">{colorV2}</span>
+                      <span className="bg-white/40 px-1">{colorV2}</span>
                     </div>
                     <div>
-                      <span className="bg-white/40">
+                      <span className="bg-white/40 px-1">
                         {isHue(option) ? (
                           <>
                             <div>
-                              <span className="bg-white/40">
+                              <span className="bg-white/40 px-1">
                                 {
                                   Object.entries(optionsV2).find(
                                     ([_, value]) => value === colorV2
