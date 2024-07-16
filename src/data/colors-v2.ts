@@ -1,6 +1,6 @@
 import { ColorOptions } from './color-palette-type';
 
-export const colorsV2: ColorOptions = {
+export const colorsV2 = {
   blue: {
     25: '#EAEDF0',
     50: '#E6EEF5',
@@ -110,4 +110,4 @@ export const colorsV2: ColorOptions = {
     light: '#FFF5E1',
     main: '#FFB41F',
   },
-};
+} as const satisfies ColorOptions;
