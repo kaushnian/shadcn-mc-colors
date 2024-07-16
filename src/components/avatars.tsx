@@ -23,11 +23,11 @@ const match: { [key: string]: [string, string] } = {
   '2a6974': [colorsV2.teal[600], 'teal-600'],
   '66a34d': [colorsV2.green[400], 'green-400'],
   a4af36: [colorsV2.green[300], 'green-300'],
-  aa3322: [colorsV2.red[600], 'red-600'],
+  aa3322: [colorsV2.orange[900], 'orange-900'],
   e32f92: [colorsV2.magenta[400], 'magenta-400'],
   f4f7fa: [colorsV2.grey[50], 'grey-50'],
   fadedTeal: [colorsV2.teal[200], 'teal-200'],
-  ff5722: [colorsV2.red[300], 'red-300'],
+  ff5722: [colorsV2.orange[600], 'orange-600'],
 } as const;
 
 export default function Avatars() {

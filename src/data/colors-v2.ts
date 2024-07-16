@@ -1,6 +1,6 @@
 import { ColorOptions } from './color-palette-type';
 
-export const colorsV2 = {
+export const colorsV2: ColorOptions = {
   blue: {
     25: '#EAEDF0',
     50: '#E6EEF5',
@@ -63,6 +63,19 @@ export const colorsV2 = {
     light: '#EDBBD8',
     main: '#B70081',
   },
+  // No V1
+  orange: {
+    100: '#F9CDBE',
+    200: '#F6AD95',
+    300: '#F48D6C',
+    400: '#F2754C',
+    50: '#F8E9E8',
+    500: '#F1602F',
+    600: '#E65A2B',
+    700: '#D85327',
+    800: '#CA4D23',
+    900: '#B0411E',
+  },
   red: {
     50: '#FCE3E9',
     100: '#FBC8C8',
@@ -110,4 +123,4 @@ export const colorsV2 = {
     light: '#FFF5E1',
     main: '#FFB41F',
   },
-} as const satisfies ColorOptions;
+};
